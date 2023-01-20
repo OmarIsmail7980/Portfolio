@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./IMG/bolt-alt.svg" />
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--==================== DEVICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("zdz0xWcVYSjxV2y72");
+      })();
+    </script>
+
+    <title>Omar Ismail | Full Stack Engineer</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Omar</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message"></i>Contact Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- dark mode -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <!-- <a
+                href="https://www.linkedin.com/in/omar-ismail-195496193/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://twitter.com/omarIsmail1080"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-twitter-alt"></i>
+              </a>
+              <a
+                href="https://github.com/OmarIsmail7980"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a> -->
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    y="-20"
+                    xlink:href="./IMG/profile.jpg"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Omar</h1>
+              <h3 class="home__subtitle">Full Stack Engineer</h3>
+              <p class="home__description">
+                Full Stack Engineer with experiece in Web Development and
+                producing quality work.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My Introduction</span>
+
+        <div class="about__container container grid">
+          <img src="./IMG/dev.svg" alt="about me" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description">
+              I'm a Web developer experienced in building responsive user
+              interfaces and robust APIs. My favorite thing as a developer is
+              bringing ideas to life and making them available for the public to
+              make their lives easier.
+            </p>
+            <div class="about__info">
+            </div>
+            <div class="about__buttons">
+              <a
+                download=""
+                href="./pdf/omarIsmailresume.docx.pdf"
+                class="button button--flex"
+              >
+                Download Resume
+                <i class="uil uil-folder-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My Tech Stack</span>
+        <div class="skills__container container grid">
+          <div class="skills__list">
+            <div class="skills__lang-container">
+              <i class="devicon-javascript-plain skills__lang"></i>
+              <span class="skills__lang-name">Javascript</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-typescript-plain skills__lang"></i>
+              <span class="skills__lang-name">Typescript</span>
+            </div>
+
+            <div class="skills__lang-container">
+              <i class="uil uil-html5-alt skills__lang"></i>
+              <span class="skills__lang-name">HTML</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="uil uil-css3-simple skills__lang"></i>
+              <span class="skills__lang-name">CSS</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-bootstrap-plain skills__lang"></i>
+              <span class="skills__lang-name">Bootstrap</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="uil uil-react skills__lang"></i>
+              <span class="skills__lang-name">React</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-nodejs-plain skills__lang"></i>
+              <span class="skills__lang-name">Node.js</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-mongodb-plain skills__lang"></i>
+              <span class="skills__lang-name">MongoDB</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-mysql-plain skills__lang"></i>
+              <span class="skills__lang-name">MySQL</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-express-original skills__lang"></i>
+              <span class="skills__lang-name">Express.js</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-angularjs-plain skills__lang"></i>
+              <span class="skills__lang-name">Angular</span>
+            </div>
+            <div class="skills__lang-container">
+              <i class="devicon-git-plain skills__lang"></i>
+              <span class="skills__lang-name">Git</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./IMG/let's-Chat.jpg" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Let's Chat</h3>
+                <p class="portfolio__description">
+                  A web application were users who are in the same room can chat
+                  with each via text. all the user need to do is provide a
+                  username and a room name and they will imidiatly be redirected
+                  to that room.
+                </p>
+                <a
+                  href="https://letschat8.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./IMG/ecommerce.jpg" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Ecommerce</h3>
+                <p class="portfolio__description">
+                  An online shopping website were users can browse through
+                  products and add them to their cart.The Site features
+                  responsive desgin which can work on most devices.
+                </p>
+                <a
+                  href="https://ecommerceshopping123.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./IMG/weather.jpg" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Weather</h3>
+                <p class="portfolio__description">
+                  An application that provides the current forecast of the
+                  user's location. The app utlizes the OpenWeatherMap API to
+                  predict the weather of the user.
+                </p>
+                <a
+                  href="https://omarismail7980.github.io/WeatherApp/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in Touch</span>
+
+        <div class="contact__container container grid">
+          <!-- <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">999-777-666</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">omar.ismail7980@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Kansas city, MO - USA</span>
+              </div>
+            </div>
+          </div> -->
+
+          <form  class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label"> Name </label>
+                <input
+                  name="Name"
+                  type="text"
+                  id="name"
+                  class="contact__input"
+                />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="contact__label"> Email </label>
+                <input
+                  name="Email"
+                  type="email"
+                  id="email"
+                  class="contact__input"
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label"> Message </label>
+              <textarea
+                name="Message"
+                id="message"
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" id="submitForm" class="button button--flex">
+                Send Message <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Omar</h1>
+            <span class="footer__subtitle">Software Engineer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#skills" class="footer__link">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact me</a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil uil-instagram"></i>
+            </a>
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169; Omar Ismail. All rights reserved</p>
+      </div>
+    </footer>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
