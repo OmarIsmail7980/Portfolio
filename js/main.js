@@ -78,13 +78,22 @@ themeButton.addEventListener("click",()=>{
 
 // send Email
 function sendEmail(){
+  console.log("hello")
   let params = {
     from_name: document.getElementById("name").value,
     email_id: document.getElementById("email").value,
     message: document.getElementById("message").value,
   };
-  emailjs.send("service_u38ks4q","template_wo89zif", params).then(message=>{alert("Message sent Succesfully!")});
+  emailjs
+    .send("service_f8bvcaj", "template_te9tsg2", params)
+    .then((message) => {
+      alert("Message sent Succesfully!");
+      console.log(message);
+    })
+    .catch((e) => {
+      console.log(e);
+    });
 }
 
-const submitBtn = document.getElementById("submitForm");
-submitBtn.addEventListener("click", sendEmail);
+// const submitBtn = document.getElementById("submitForm");
+// submitBtn.addEventListener("click", sendEmail);
